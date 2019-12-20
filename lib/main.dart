@@ -5,12 +5,24 @@ void main() => runApp(MaterialApp(
     appBar: AppBar(
       title: Text('Matt App'),
       centerTitle: true,
+      backgroundColor: Colors.pink,
     ),
     body: Center(
-      child: Text('Hello ninjas!'),
+      child: Text('Hello ninjas!',
+      style: TextStyle(
+          fontSize: 20.0,
+          fontWeight: FontWeight.bold,
+          letterSpacing: 2.0,
+          color: Colors.grey[600],
+          fontFamily: "Inconsolata"
+        ),),
     ),
     floatingActionButton: FloatingActionButton(
-      child: Text('Click'),
+      onPressed: (){},
+      child: Text(
+        'Click'
+      ),
+      backgroundColor: Colors.pink,
     ),
   ),
 ));
